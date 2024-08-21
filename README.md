@@ -2,7 +2,7 @@
 
 ## Contributors
 
-Name: **[Brian Sum]**  
+Name: ** Brian Sum **  
 Email: <sumkh2@gmail.com>
 
 ## Repository Structure
