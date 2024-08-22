@@ -2,13 +2,13 @@
 
 ## Contributors
 
-Name: ** Brian Sum **  
+Name: **Brian Sum**  
 Email: <sumkh2@gmail.com>
 
 ## Repository Structure
 
 ```bash
-solar-panel-efficiency/
+lending_club/
 │
 ├── src/                            # Contains all Python scripts and artifacts
 │   ├── best_model.joblib           # Trained model for the application
@@ -16,7 +16,7 @@ solar-panel-efficiency/
 │   ├── util.py                     # Utility functions
 │   └── run.py                      # Main script running the application
 │
-├── requirements.txt      # Python dependencies for the application
+├── requirements.txt      # Python dependencies for the streamlit application
 └── README.md             # Project documentation and setup instructions
 ```
 
@@ -64,8 +64,28 @@ To set up and activate a virtual environment:
 
 ### Running the Application
 
-Execute the pipeline with the following command:
+Execute the streamlit app on local device with the following command:
 
 ```bash
 streamlit run app.py
 ```
+
+### Running MLFlow on Local Devices
+
+1. **Install dependencies:**
+
+   ```bash
+   pip install mlflow
+   ```
+
+2. **Execute the following command**
+
+   Ensure the sqlite database file `mlflow.db` is in the folder directory before executing the following command. Otherwise, the mlflow server will generate a new one. (Overwrite the neewly generated `mlflow.db` if necessary)
+
+   ```bash
+   mlflow server \
+      --backend-store-uri sqlite:///mlflow.db \
+      --default-artifact-root ./mlruns \
+      --host 127.0.0.1 \
+      --port 8080
+   ```
