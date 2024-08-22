@@ -20,7 +20,7 @@ lending_club/
 │   └── run.py                      # Main script running the application
 │
 ├── datasets/                       # Contains datasets
-│   ├── lc_datasets.csv             # Lending Club dataset
+│   └── lc_datasets.csv             # Lending Club dataset
 │
 ├── EDA_Report.ipynb      # Jupyter notebook for Exploratory Data Analysis
 ├── ML_Report.ipynb       # Jupyter notebook for Machine Learning
