@@ -1,5 +1,8 @@
 # Lending Club Prediction App
 
+The Model is deployed into a Streamlit App and can be access here: 
+<https://lendingclubiti105project.streamlit.app>
+
 ## Contributors
 
 Name: **Brian Sum**  
@@ -16,8 +19,14 @@ lending_club/
 │   ├── util.py                     # Utility functions
 │   └── run.py                      # Main script running the application
 │
+├── datasets/                       # Contains datasets
+│   ├── lc_datasets.csv             # Lending Club dataset
+│
+├── EDA_Report.ipynb      # Jupyter notebook for Exploratory Data Analysis
+├── ML_Report.ipynb       # Jupyter notebook for Machine Learning
 ├── requirements.txt      # Python dependencies for the streamlit application
 └── README.md             # Project documentation and setup instructions
+
 ```
 
 ## Setup and Execution
